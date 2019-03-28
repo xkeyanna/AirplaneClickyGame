@@ -25,7 +25,7 @@ Once the user's score is reset after an incorrect guess, the game should restart
 
 
 ## Website
-https://xkeyanna.github.io/AirplaneClickyGame/.
+https://xkeyanna.github.io/AirplaneClickyGame/
 
 # Copyright
 Keyanna Xu © 2019. All rights reserved.
