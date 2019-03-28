@@ -15,7 +15,7 @@ Every time an image is clicked, the images rendered to the page should shuffle t
 
 Once the user's score is reset after an incorrect guess, the game should restart.
 
-
+https://github.com/xkeyanna/AirplaneClickyGame/issues/1#issue-426661828
 
 Technologies used
 React
