@@ -1,13 +1,13 @@
-##Airplane Clicky Game
-##Overview
+## Airplane Clicky Game
+## Overview
 This is a memory game using React. The application's UI is split into four components.
 
-##Instructions
+## Instructions
 Create a new React application using Create React App.
 
 The app should render 12 different images (of your choice) to the screen. Each image should listen for click events.
 
-##Airplane memory game
+## Airplane memory game
 
 The app should keep track of the user's score. The user's score should be incremented when clicking an image for the first time. The user's score should be reset to 0 if they click the same image more than once.
 
