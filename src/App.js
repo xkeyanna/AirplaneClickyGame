@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from ".components/Navbar";
+import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import FriendCard from "./components/FriendCard";
 import Footer from "./components/Footer";
@@ -29,10 +29,10 @@ class App extends Component {
         score: 0
       });
       alert("You lose. Play again?");
-      // if you click on an available fish, your score is increased and cards reordered
+      // if you click on an available airplane, your score is increased and cards reordered
     } else {
       this.setState({
-        airplane: this.state.airplane.sort(function (a, b) {
+        airplane: this.state.airplanes.sort(function (a, b) {
           return 0.5 - Math.random();
         }),
         clickedAirplane: this.state.clickedAirplane.concat(
@@ -66,7 +66,7 @@ class App extends Component {
         />
         <Jumbotron />
         <div className="wrapper">
-          {this.state.fish.map(fish => (
+          {this.state.airplanes.map(airplanes => (
             <FriendCard
               imageClick={this.imageClick}
               id={airplanes.id}
