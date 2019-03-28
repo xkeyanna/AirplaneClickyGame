@@ -17,13 +17,15 @@ Once the user's score is reset after an incorrect guess, the game should restart
 
 ![Screenshot (44)](https://user-images.githubusercontent.com/38111596/55185817-611d7780-5152-11e9-8f09-875f50787138.png)
 
-Technologies used
-React
-ES6
-Bootstrap
-CSS
-Website
+## Technologies used
+# React
+# ES6
+# Bootstrap
+# CSS
+
+
+## Website
 https://xkeyanna.github.io/AirplaneClickyGame/.
 
-Copyright
+# Copyright
 Keyanna Xu © 2019. All rights reserved.
