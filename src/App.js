@@ -10,33 +10,43 @@ import "./App.css";
 class App extends Component {
   state = {
     airplanes,
-    clickedAirplane: [],
-    score: 0
+    clickedAirplanes: [],
+    score: 0,
+    highscore: 0
   };
+
+
+
 
   // when you click on a card... the airplane is taken out of the array
   imageClick = event => {
-    const currentAirplane = event.target.addEventListener;
-    const AirplaneAlreadyClicked = this.state.clickedAirplane.indexOf(currentAirplane) > -1;
+    const currentAirplanes = event.target.alt;
+    console.log(event.target.val + " Event value");
+    console.log("current airplanes:" + currentAirplanes);
+    console.log("clicked airplanes:" + this.state.clickedAirplanes)
+    const AirplanesAlreadyClicked = this.state.clickedAirplanes.indexOf(currentAirplanes) > -1;
 
+    console.log("clicked:" + this.state.clickedAirplanes);
+    console.log(currentAirplanes);
+    console.log(event.target);
     // if you click on an airplane that has already been selected, the game is reset and cards reordered
-    if (AirplaneAlreadyClicked) {
+    if (AirplanesAlreadyClicked) {
       this.setState({
-        airplane: this.state.airplane.sort(function (a, b) {
+        airplanes: this.state.airplanes.sort(function (a, b) {
           return 0.5 - Math.random();
         }),
-        clickedAirplane: [],
+        clickedAirplanes: [],
         score: 0
       });
       alert("You lose. Play again?");
       // if you click on an available airplane, your score is increased and cards reordered
     } else {
       this.setState({
-        airplane: this.state.airplanes.sort(function (a, b) {
+        airplanes: this.state.airplanes.sort(function (a, b) {
           return 0.5 - Math.random();
         }),
-        clickedAirplane: this.state.clickedAirplane.concat(
-          currentAirplane
+        clickedAirplanes: this.state.clickedAirplanes.concat(
+          currentAirplanes
         ),
         score: this.state.score + 1
       },
@@ -45,10 +55,10 @@ class App extends Component {
           if (this.state.score === 12) {
             alert("Yay! You Win!");
             this.setState({
-              airplanes: this.state.airplane.sort(function (a, b) {
+              airplanes: this.state.airplanes.sort(function (a, b) {
                 return 0.5 - Math.random();
               }),
-              clickedAirplane: [],
+              clickedAirplanes: [],
               score: 0
             });
           }
